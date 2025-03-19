@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #2e8b57, #228b22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.link {
+    text-align: center;
+}
+
+.link a:hover {
+    color: darkgoldenrod;
+}
+
+.judul {
+    text-align: center;
+    height: 30px;
+    color: aliceblue;
+    
+
+}
+
+img {
+    text-align: center;
+    width: 500px;
+    animation: boounce 2s infinite;
+}
+
+@media screen and (max-width: 600px) {
+    .link{
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    img {
+        max-width: 500px;
+    }
+    .judul{
+        margin: 5px;
+    }
+}

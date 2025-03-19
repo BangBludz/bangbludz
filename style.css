@@ -95,3 +95,36 @@ img {
         transform: translateY(-20px) rotate(10deg);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .kp {
+        position: absolute;
+        width: 15%;
+        height: 10%;
+        background-color: #f4d03f;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        animation: float 6s ease-in-out infinite;
+        z-index: 1;    
+    }
+
+    .kp::before {
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 8%;
+        background-color: #f1c30f;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        top: 10px;
+        left: 10px;
+    }
+
+    .container{
+        width: 70%;
+        height: 70%;
+    }
+
+    img{
+        max-width: 150px;
+    }
+
+}
